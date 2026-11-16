@@ -17,7 +17,30 @@ import re
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 POINTS = [100, 200, 300, 400, 500]
-ORDER = ['sparta-1', 'sparta-2', 'greek-world-1', 'greek-world-2', 'xerxes-1', 'xerxes-2']
+ORDER = ['sparta-1', 'sparta-2', 'sparta-3', 'greek-world-1', 'greek-world-2', 'xerxes-1', 'xerxes-2']
+
+
+def normalise(g):
+    """Newer games (e.g. sparta-3) store each clue as clue/answer/accept/ref instead of q/a.
+    Copy them into q/a so the answer key and index can treat every game the same way."""
+    def fix(item, question_field):
+        if 'q' not in item:
+            item['q'] = item.get(question_field, '')
+            a = item.get('answer', '')
+            if item.get('accept'):
+                a += ' (also accept: ' + item['accept'] + ')'
+            if item.get('ref'):
+                a += ' [' + item['ref'] + ']'
+            item['a'] = a
+        if 'dotpoint' not in item:
+            item['dotpoint'] = item.get('dotPoint', '')
+    for cat in g['categories']:
+        for cl in cat['clues']:
+            fix(cl, 'clue')
+        if 'dotpoint' not in cat:
+            cat['dotpoint'] = cat['clues'][0].get('dotpoint', '') if cat['clues'] else ''
+    fix(g['final'], 'clue')
+    return g
 
 
 def read_games():
@@ -34,7 +57,7 @@ def read_games():
             print('ERROR: the questions in', os.path.basename(path), 'are not valid JSON:', e)
             print('       (usually a missing comma or an unescaped double quote)')
             continue
-        games[g['id']] = g
+        games[g['id']] = normalise(g)
     ordered = [games[i] for i in ORDER if i in games] + [g for i, g in games.items() if i not in ORDER]
     return ordered
 
@@ -133,13 +156,14 @@ def render_index(games):
 <header>
   <div class="brand">Year 12 Ancient History · Revision</div>
   <h1>HSC Ancient History Jeopardy</h1>
-  <div class="sub">Six revision games built on the NESA Ancient History Stage 6 syllabus dot points</div>
+  <div class="sub">Revision games built on the NESA Ancient History Stage 6 syllabus dot points</div>
 </header>
 <main>
 %s
 <div class="how">
 <b>How to play.</b> Open a game on the projector, set the number of teams (2–6) and rename them. Teams choose a category and a point value; click the tile to show the clue. Press <b>Show answer</b> (or the A key) to reveal it, use the + / − buttons to award or deduct the points, then <b>Close</b>. Answered tiles grey out. When the board is done, press <b>Final Jeopardy</b>: teams write a wager first, then reveal the clue, and type the wager into the points box before awarding. Scores are remembered by the browser until you press <b>Reset game</b>.<br><br>
-<b>Difficulty.</b> 100 points = core recall every student should know; 300 = a specific detail or source; 500 = a historian's view, a piece of evidence, or a link between ideas. No question is repeated anywhere across the six games, so the two games for a topic can be played on different days.
+<b>Spartan Society: Survey &amp; Government</b> works a little differently: it has six categories, a hidden Daily Double and a 30-second timer for Final Jeopardy. Press <b>Show answer</b> (or Space), then click the team that earns the points; Escape returns to the board. Its start screen explains the rest.<br><br>
+<b>Difficulty.</b> 100 points = core recall every student should know; 300 = a specific detail or source; 500 = a historian's view, a piece of evidence, or a link between ideas. No question is repeated across Sparta I and II, Greek World I and II, and Xerxes I and II, so the two games for a topic can be played on different days. Survey &amp; Government is a focused review of two Sparta dot points, so it revisits some core facts from Sparta I.
 </div>
 </main>
 </body></html>

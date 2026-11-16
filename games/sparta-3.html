@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sparta Survey &amp; Government Jeopardy</title>
+
+<!--
+  HOW TO EDIT THE CLUES
+  =====================
+  Every clue in this game lives in the block just below this note: it starts
+  on the line that contains id="game-data" and ends at the closing script tag.
+
+  Each clue looks like this:
+    {"value": 100, "clue": "The words the class sees", "answer": "The answer", "accept": "Other answers to accept", "dotPoint": "Survey", "ref": "Thucydides 1.10.2 · Cooley G2"}
+
+  To change a clue:
+    1. Open this file in a plain text editor (TextEdit, Notepad or VS Code).
+    2. Change only the words INSIDE the straight double quotes.
+    3. Keep every straight double quote, colon and comma exactly where it is.
+    4. If you need quotation marks inside a clue, use curly quotes or single quotes instead.
+    5. Leave "accept" or "ref" as "" when there is nothing to show.
+    6. Save the file and refresh the page in the browser.
+  If you make a typing mistake, the game shows a message instead of the board,
+  so you will know straight away.
+-->
+<script id="game-data" type="application/json">
+{
+  "title": "Spartan Society: Survey & Government",
+  "subtitle": "HSC Ancient History · Spartan society to the Battle of Leuctra 371 BC",
+  "id": "sparta-3",
+  "topic": "Spartan Society to the Battle of Leuctra 371 BC",
+  "theme": "sparta",
+  "categories": [
+    {
+      "name": "Lie of the Land",
+      "dotpoint": "Survey: geographical setting, natural features and resources of ancient Sparta",
+      "clues": [
+        {"value": 100, "clue": "Sparta was built in the valley of this river.", "answer": "The Eurotas", "accept": "Evrotas; the Eurotas River", "dotPoint": "Survey", "ref": ""},
+        {"value": 200, "clue": "This high mountain range, rising to about 2,400 m, walls Sparta’s valley on the west.", "answer": "Taygetus", "accept": "Taygetos; Mount Taygetus", "dotPoint": "Survey", "ref": ""},
+        {"value": 300, "clue": "Explain one way the mountains around Sparta’s valley helped protect the Spartans.", "answer": "Hard to invade: few routes in", "accept": "A natural barrier or defence; enemies found it hard to reach the city", "dotPoint": "Survey", "ref": ""},
+        {"value": 400, "clue": "Plutarch says that in c. 464 BC this disaster made mountain peaks break away and left only five houses in Sparta standing.", "answer": "An earthquake", "accept": "The great earthquake", "dotPoint": "Survey", "ref": "Plutarch, Life of Kimon 16.4 · Cooley E64"},
+        {"value": 500, "clue": "Name the mountain range on the eastern side of Sparta’s valley AND the town on the Laconian Gulf that served as Sparta’s chief port.", "answer": "Parnon; Gytheion", "accept": "Mount Parnon; Gythium, Gytheio or Gytheum. Both needed.", "dotPoint": "Survey", "ref": ""}
+      ]
+    },
+    {
+      "name": "Natural Resources",
+      "dotpoint": "Survey: geographical setting, natural features and resources of ancient Sparta",
+      "clues": [
+        {"value": 100, "clue": "Laconia had deposits of this metal ore; traces of ancient workings for it are common at Boia.", "answer": "Iron", "accept": "Iron ore", "dotPoint": "Survey", "ref": ""},
+        {"value": 200, "clue": "This sea snail, found around the island of Kythera off the Laconian coast, produced a prized purple dye.", "answer": "The murex", "accept": "Murex shell; murex snail", "dotPoint": "Survey", "ref": ""},
+        {"value": 300, "clue": "Laconia had “high quality building stone”, but Hodkinson notes that this local stone “was hard to work”. Name it.", "answer": "Marble", "accept": "Laconian marble", "dotPoint": "Survey", "ref": ""},
+        {"value": 400, "clue": "A Spartan poet of the 7th century BC called this conquered region “good to plough and good to plant”.", "answer": "Messenia", "accept": "Messene", "dotPoint": "Survey", "ref": "Tyrtaeus, fragment 5 · Cooley A5"},
+        {"value": 500, "clue": "Herodotus says Sparta “rapidly grew prosperous and strong” because it was blessed with two things. Name both.", "answer": "Fertile land and a large population", "accept": "Good farmland and many people. Both needed.", "dotPoint": "Survey", "ref": "Herodotus, Histories 1.66.1 · Cooley H9"}
+      ]
+    },
+    {
+      "name": "The Site of Sparta",
+      "dotpoint": "Survey: the historical and geographical context; significant sites: Sparta",
+      "clues": [
+        {"value": 100, "clue": "This was usually a Greek city’s highest hill. At Sparta it was only a low, unfortified hill. What is it called?", "answer": "The acropolis", "accept": "Akropolis", "dotPoint": "Survey", "ref": "Pausanias 3.17.1 · Cooley K3"},
+        {"value": 200, "clue": "Sparta’s defeat by Thebes in this battle of 371 BC marks the end of the period you study.", "answer": "Leuctra", "accept": "Leuktra; the Battle of Leuctra", "dotPoint": "Survey", "ref": ""},
+        {"value": 300, "clue": "Xenophon says that when the Thebans invaded in 370/69 BC, Spartiates were “stationed here and there” to guard the city. Why was this needed?", "answer": "Sparta had no city walls", "accept": "The city was unwalled", "dotPoint": "Survey", "ref": "Xenophon, Hellenika 6.5.27 · Cooley K5"},
+        {"value": 400, "clue": "Thucydides predicted that Sparta’s ruins would make it seem weaker than it was, while this city’s ruins would make its power seem twice as great.", "answer": "Athens", "accept": "", "dotPoint": "Survey", "ref": "Thucydides 1.10.2 · Cooley G2"},
+        {"value": 500, "clue": "Pitana, Mesoa and Limnai were three of the four villages that formed Sparta. Name the fourth, and the fifth community about 5 km south.", "answer": "Kynosoura; Amyklai", "accept": "Cynosura or Kynosura; Amyclae or Amyklae. Both needed.", "dotPoint": "Survey", "ref": ""}
+      ]
+    },
+    {
+      "name": "The Ephors",
+      "dotpoint": "Government: ephorate, gerousia, ekklesia",
+      "clues": [
+        {"value": 100, "clue": "How many ephors were elected each year?", "answer": "Five", "accept": "5", "dotPoint": "Government", "ref": ""},
+        {"value": 200, "clue": "One ephor gave his name to the year, so official records were dated by him. What was he called?", "answer": "The eponymous ephor", "accept": "The ephor who named the year", "dotPoint": "Government", "ref": "Pausanias 3.11.2 · Cooley D16"},
+        {"value": 300, "clue": "Each month the king swore to rule by the laws. What did the ephors, speaking for the state, promise in return?", "answer": "To uphold his royal privileges", "accept": "To keep his privileges undiminished while he kept his oath", "dotPoint": "Government", "ref": "Xenophon, Spartan Constitution 15.7 · Cooley D9"},
+        {"value": 400, "clue": "Xenophon says the ephors could fine anyone and put an official on trial for his life, ruling “rather like” these.", "answer": "Tyrants", "accept": "Tyrants and presidents of the games", "dotPoint": "Government", "ref": "Xenophon, Spartan Constitution 8.4 · Cooley D19"},
+        {"value": 500, "clue": "Aristotle says the ephors decided major lawsuits by their own judgement. What did he think they should follow instead?", "answer": "Written rules and laws", "accept": "Written laws", "dotPoint": "Government", "ref": "Aristotle, Politics 2.9 (1270b) · Cooley D18"}
+      ]
+    },
+    {
+      "name": "The Gerousia",
+      "dotpoint": "Government: ephorate, gerousia, ekklesia",
+      "clues": [
+        {"value": 100, "clue": "Members of the gerousia had to be over this age.", "answer": "Sixty", "accept": "60; over 60", "dotPoint": "Government", "ref": "Plutarch, Life of Lycurgus 26.1 · Cooley D15"},
+        {"value": 200, "clue": "The gerousia had 30 members: 28 elders elected for life, plus whom?", "answer": "The two kings", "accept": "Both kings", "dotPoint": "Government", "ref": ""},
+        {"value": 300, "clue": "Xenophon says judging trials for these offences gave the elders more prestige than men in their prime. Which offences?", "answer": "Capital offences", "accept": "Cases that could carry the death penalty", "dotPoint": "Government", "ref": "Xenophon, Spartan Constitution 10.2 · Cooley D12"},
+        {"value": 400, "clue": "Plutarch says candidates for the gerousia walked silently through the assembly one at a time. How was their order decided?", "answer": "By lot", "accept": "By drawing lots; at random", "dotPoint": "Government", "ref": "Plutarch, Life of Lycurgus 26.2 · Cooley D15"},
+        {"value": 500, "clue": "In 403 BC a court of the 28 elders, the other king and these officials tried King Pausanias. Name the officials and say how they voted.", "answer": "The ephors; to acquit", "accept": "The ephors voted him not guilty. Both needed.", "dotPoint": "Government", "ref": "Pausanias 3.5.2 · Cooley E44"}
+      ]
+    },
+    {
+      "name": "The Ekklesia",
+      "dotpoint": "Government: ephorate, gerousia, ekklesia",
+      "clues": [
+        {"value": 100, "clue": "Who could attend the ekklesia?", "answer": "Spartiate men with full citizen rights", "accept": "Full citizens; adult male Spartiates (probably over 30)", "dotPoint": "Government", "ref": ""},
+        {"value": 200, "clue": "Some books call the assembly by this name, but Cooley explains it was really a festival of Apollo held on assembly day.", "answer": "The apella", "accept": "Apella", "dotPoint": "Government", "ref": ""},
+        {"value": 300, "clue": "Plutarch says citizens in the assembly had the power only to do this with the motions laid before them.", "answer": "Accept or reject them", "accept": "Approve or reject; vote yes or no", "dotPoint": "Government", "ref": "Plutarch, Life of Lycurgus 6.3 · Cooley D48"},
+        {"value": 400, "clue": "Thucydides says Spartans in the assembly “take decisions by acclamation rather than” using these.", "answer": "Voting pebbles", "accept": "Ballots; casting votes", "dotPoint": "Government", "ref": "Thucydides 1.87.2 · Cooley D23"},
+        {"value": 500, "clue": "In 432 BC this ephor said he couldn’t tell which shout was louder, so he made the assembly physically divide to vote for war.", "answer": "Sthenelaidas", "accept": "", "dotPoint": "Government", "ref": "Thucydides 1.87 · Cooley E31"}
+      ]
+    }
+  ],
+  "final": {
+    "category": "The Mixed Constitution",
+    "dotpoint": "Government: ephorate, gerousia, ekklesia",
+    "clue": "Aristotle says the kings supported Sparta’s constitution because of their honour, and the leading men because of the gerousia. Which office kept the people content, and why?",
+    "answer": "The ephorate: chosen from all citizens",
+    "accept": "The ephors, because they could come from the whole citizen body. Both parts needed.",
+    "dotPoint": "Government",
+    "ref": "Aristotle, Politics 2.9 (1270b) · Cooley D18"
+  }
+}
+</script>
+
+<style>
+  /* Layout: one projector screen. Top bar, flexible board or clue area, team scores pinned along the bottom. */
+  :root {
+    --navy: #0E1A33;
+    --header: #13254A;
+    --raised: #1A2F57;
+    --line: #34497A;
+    --tile: #7E1F2A;
+    --tile-hover: #C4303F;
+    --used: #26304A;
+    --gold: #F2C14E;
+    --gold-hi: #FFD772;
+    --ink: #FFFFFF;
+    --soft: #C8D2E6;
+    --neg: #FF9C9C;
+    --right: #2F7D4F;
+    --wrong: #B23B3B;
+    --scrim: rgba(5, 10, 22, 0.82);
+    --font: "Segoe UI", Arial, sans-serif;
+    --r: 6px;
+    --gap: 8px;
+    color-scheme: dark;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--navy);
+    color: var(--ink);
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 1.4;
+    overflow: hidden;
+  }
+  p, h1, h2, ol { margin: 0; }
+  button, input { font: inherit; }
+
+  .app {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    padding-block: 10px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  #view { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+
+  /* ---------- shared bits ---------- */
+  .bar {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 12px; flex-wrap: wrap; min-height: 40px;
+  }
+  .bar-title {
+    font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
+    font-size: clamp(13px, 1.15vw, 20px); color: var(--soft);
+  }
+  .bar-actions { display: flex; align-items: center; gap: var(--gap); flex-wrap: wrap; }
+  .left { color: var(--soft); font-size: clamp(13px, 1.05vw, 18px); font-variant-numeric: tabular-nums; }
+  .tag {
+    color: var(--gold); font-weight: 700; text-transform: uppercase; letter-spacing: .14em;
+    font-size: clamp(10px, .85vw, 15px);
+  }
+  .small { color: var(--soft); font-size: clamp(12px, .95vw, 16px); }
+  kbd {
+    font: inherit; font-size: .68em; font-weight: 600; line-height: 1;
+    border: 1px solid currentColor; border-radius: 4px; padding: .2em .45em; margin-left: .55em;
+    opacity: .85; vertical-align: middle;
+  }
+
+  .btn {
+    font-weight: 700; font-size: clamp(14px, 1.15vw, 20px); line-height: 1.2;
+    padding: .5em 1em; border-radius: var(--r); border: 2px solid transparent;
+    background: var(--raised); color: var(--ink); cursor: pointer;
+    transition: background-color .12s, border-color .12s;
+  }
+  .btn:hover { border-color: var(--gold); }
+  .btn.primary { background: var(--gold); color: var(--navy); }
+  .btn.primary:hover { background: var(--gold-hi); border-color: var(--gold-hi); }
+  .btn.ghost { background: transparent; border-color: var(--line); }
+  .btn.ghost:hover { border-color: var(--gold); }
+  .btn.big { font-size: clamp(18px, 1.6vw, 30px); padding: .55em 1.3em; }
+  .btn.award { background: var(--tile); }
+  .btn.award:hover { background: var(--tile-hover); border-color: var(--tile-hover); }
+  .btn.right { background: var(--right); }
+  .btn.wrong { background: var(--wrong); }
+  .btn.danger { background: var(--wrong); }
+  .btn[aria-pressed="true"] { border-color: var(--gold); box-shadow: 0 0 0 2px var(--gold); }
+  :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+  .error { color: var(--neg); font-weight: 600; font-size: clamp(14px, 1.15vw, 20px); text-align: center; }
+
+  /* ---------- start screen ---------- */
+  .start {
+    flex: 1; min-height: 0; overflow: auto;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: clamp(14px, 2.6vh, 28px); text-align: center;
+  }
+  .eyebrow {
+    color: var(--gold); font-weight: 700; text-transform: uppercase; letter-spacing: .14em;
+    font-size: clamp(12px, 1.1vw, 18px);
+  }
+  .start h1 {
+    font-size: clamp(30px, min(4.6vw, 8vh), 84px); line-height: 1.08; font-weight: 800;
+    text-wrap: balance;
+  }
+  .start h1 span { color: var(--gold); display: block; }
+  .how { max-width: 52ch; color: var(--soft); font-size: clamp(15px, 1.35vw, 24px); }
+  .how-list { display: grid; gap: 6px; }
+  .setup {
+    background: var(--header); border-radius: var(--r); padding: clamp(14px, 2.4vh, 26px) clamp(16px, 2vw, 32px);
+    display: grid; gap: clamp(10px, 1.8vh, 18px); justify-items: center; width: min(100%, 980px);
+  }
+  .setup-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; justify-content: center; }
+  .setup-label { font-weight: 700; font-size: clamp(15px, 1.3vw, 22px); }
+  .seg { display: flex; gap: 6px; }
+  .seg .btn { min-width: 3em; }
+  .names {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: var(--gap);
+    width: 100%;
+  }
+  .name-field { display: grid; gap: 4px; text-align: left; }
+  .name-field span { color: var(--soft); font-size: clamp(12px, .95vw, 15px); }
+  .name-field input {
+    width: 100%; background: var(--navy); color: var(--gold); font-weight: 700;
+    font-size: clamp(16px, 1.4vw, 24px); border: 2px solid var(--line); border-radius: var(--r);
+    padding: .35em .6em; cursor: text;
+  }
+  .name-field input:hover { border-color: var(--gold); }
+
+  /* ---------- board ---------- */
+  .board-view { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: var(--gap); }
+  .board-wrap { flex: 1; min-height: 0; overflow-x: auto; }
+  .board {
+    height: 100%; display: grid; gap: var(--gap);
+    grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+    grid-template-rows: auto repeat(var(--rows), minmax(0, 1fr));
+  }
+  .cat {
+    background: var(--header); border-radius: var(--r); padding: 8px 8px 10px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
+    text-align: center; min-height: clamp(64px, 10vh, 120px); min-width: 0;
+  }
+  .cat-name {
+    color: var(--ink); font-weight: 700; text-transform: uppercase; letter-spacing: .04em;
+    font-size: clamp(13px, min(1.6vw, 2.9vh), 30px); line-height: 1.15; text-wrap: balance;
+    overflow-wrap: anywhere;
+  }
+  .tile {
+    background: var(--tile); color: var(--gold); border: 0; border-radius: var(--r);
+    font-weight: 800; font-size: clamp(26px, min(3.6vw, 6.4vh), 72px);
+    font-variant-numeric: tabular-nums; cursor: pointer; min-height: 0; min-width: 0;
+    transition: background-color .12s;
+  }
+  .tile:hover { background: var(--tile-hover); }
+  .tile.used, .tile.used:hover { background: var(--used); cursor: default; }
+
+  /* ---------- clue screens ---------- */
+  .clue-view, .dd-view, .final-view { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: var(--gap); }
+  .clue-meta { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+  .meta-cat { font-weight: 700; text-transform: uppercase; letter-spacing: .05em; font-size: clamp(15px, 1.5vw, 26px); }
+  .meta-pts { color: var(--gold); font-weight: 800; font-size: clamp(15px, 1.5vw, 26px); font-variant-numeric: tabular-nums; }
+  .clue-body, .dd-body, .final-body {
+    flex: 1; min-height: 0; overflow: auto;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: clamp(12px, 2.6vh, 30px); text-align: center; padding-block: 4px;
+  }
+  .clue-text {
+    font-size: clamp(24px, min(3.4vw, 6vh), 68px); font-weight: 600; line-height: 1.25;
+    max-width: 34em; text-wrap: balance;
+  }
+  .clue-text.sm { font-size: clamp(18px, min(2vw, 3.6vh), 40px); color: var(--soft); }
+  .answer { display: grid; gap: 6px; justify-items: center; max-width: 60em; }
+  .ans { color: var(--gold); font-weight: 800; font-size: clamp(22px, min(3vw, 5.4vh), 60px); line-height: 1.15; text-wrap: balance; }
+  .accept { color: var(--soft); font-size: clamp(15px, min(1.6vw, 2.9vh), 30px); }
+  .ref { color: var(--soft); font-size: clamp(13px, min(1.3vw, 2.4vh), 24px); }
+  .accept span, .ref span {
+    color: var(--gold); font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
+    font-size: .75em; margin-right: .5em;
+  }
+  .actions { display: flex; align-items: center; justify-content: center; gap: var(--gap); flex-wrap: wrap; }
+  .award-label { color: var(--soft); font-weight: 700; font-size: clamp(14px, 1.15vw, 20px); margin-right: 4px; }
+
+  .dd-title {
+    color: var(--gold); font-weight: 800; text-transform: uppercase; letter-spacing: .06em;
+    font-size: clamp(34px, min(5.4vw, 10vh), 104px); line-height: 1;
+  }
+  .dd-step { font-size: clamp(16px, 1.5vw, 26px); color: var(--soft); max-width: 50ch; }
+  .team-pick { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--gap); }
+  .wager-line { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: center; }
+  .wager-line label { font-weight: 700; font-size: clamp(16px, 1.5vw, 26px); }
+  .num {
+    width: 7em; text-align: center; background: var(--navy); color: var(--gold); font-weight: 800;
+    font-size: clamp(20px, 2vw, 36px); border: 2px solid var(--line); border-radius: var(--r); padding: .2em .4em;
+    font-variant-numeric: tabular-nums;
+  }
+  .num:hover, .num:focus { border-color: var(--gold); }
+
+  .final-cat { font-weight: 800; text-transform: uppercase; letter-spacing: .05em; font-size: clamp(22px, min(3vw, 5.4vh), 56px); }
+  .final-cat.sm { font-size: clamp(15px, 1.4vw, 24px); color: var(--gold); }
+  .wagers, .marks {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--gap);
+    width: min(100%, 1200px);
+  }
+  .wager-card, .mark-card {
+    background: var(--header); border-radius: var(--r); padding: 10px 12px;
+    display: grid; gap: 6px; justify-items: center; min-width: 0;
+  }
+  .wager-card label, .mark-name {
+    font-weight: 700; font-size: clamp(15px, 1.3vw, 22px); color: var(--ink);
+    max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .mark-btns { display: flex; gap: 6px; }
+  .mark-card.marked .btn[aria-pressed="false"] { opacity: .45; }
+  .timer {
+    min-width: 4.5em; color: var(--gold); font-weight: 800; font-variant-numeric: tabular-nums;
+    font-size: clamp(22px, 2.2vw, 40px);
+  }
+  .timer.done { color: var(--neg); }
+  .ranking { list-style: none; padding: 0; display: grid; gap: 6px; width: min(100%, 640px); }
+  .ranking li {
+    display: flex; justify-content: space-between; gap: 16px; background: var(--header);
+    border-radius: var(--r); padding: 8px 16px; font-size: clamp(16px, 1.6vw, 28px); font-weight: 700;
+  }
+  .ranking li:first-child { box-shadow: 0 0 0 2px var(--gold); }
+  .rank-score { color: var(--gold); font-variant-numeric: tabular-nums; }
+
+  /* ---------- scoreboard ---------- */
+  .scores { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--gap); }
+  .team {
+    background: var(--header); border-radius: var(--r); padding: 8px 10px;
+    display: flex; align-items: center; justify-content: space-between; gap: 8px;
+    border: 2px solid transparent; min-width: 0;
+  }
+  .team.lead { border-color: var(--gold); }
+  .team-text { display: grid; min-width: 0; }
+  .team-name {
+    font-weight: 700; font-size: clamp(14px, 1.3vw, 22px);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .team-score {
+    color: var(--gold); font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1.1;
+    font-size: clamp(22px, min(2.4vw, 4.4vh), 46px);
+  }
+  .team-score.neg { color: var(--neg); }
+  .adj { display: flex; gap: 4px; flex: none; }
+  .adj-btn {
+    width: 34px; height: 34px; padding: 0; border-radius: var(--r); cursor: pointer;
+    background: var(--raised); color: var(--ink); border: 2px solid var(--line);
+    font-weight: 800; font-size: 20px; line-height: 1;
+  }
+  .adj-btn:hover { border-color: var(--gold); }
+
+  /* ---------- confirm dialog ---------- */
+  .modal {
+    position: fixed; inset: 0; z-index: 20; background: var(--scrim);
+    display: flex; align-items: center; justify-content: center;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .modal-card {
+    background: var(--header); border: 2px solid var(--gold); border-radius: var(--r);
+    padding: 24px 28px; max-width: 520px; display: grid; gap: 14px; text-align: center;
+  }
+  .modal-card h2 { font-size: clamp(22px, 2vw, 32px); }
+  .modal-card p { color: var(--soft); font-size: clamp(15px, 1.2vw, 20px); }
+
+  .data-error { max-width: 60ch; margin: auto; display: grid; gap: 12px; }
+  .data-error h1 { color: var(--gold); font-size: 28px; }
+
+  /* Small screens: let the page scroll and keep the board readable inside its own scroller. */
+  @media (max-width: 760px), (max-height: 520px) {
+    body { overflow: auto; }
+    .app { height: auto; min-height: 100%; }
+    .board { min-width: 640px; min-height: 480px; }
+    .board-wrap { flex: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="app">
+  <main id="view" aria-live="polite"></main>
+  <footer id="scores" class="scores" aria-label="Team scores" hidden></footer>
+</div>
+
+<div id="confirm" class="modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="confirm-title">
+    <h2 id="confirm-title">Start a new game?</h2>
+    <p>This clears every score and every used tile. It can’t be undone.</p>
+    <div class="actions">
+      <button class="btn danger" data-action="confirm-yes">Clear and start again</button>
+      <button class="btn ghost" id="confirm-no" data-action="confirm-no">Keep playing</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var view = document.getElementById('view');
+  var scoresEl = document.getElementById('scores');
+  var confirmEl = document.getElementById('confirm');
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (ch) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch];
+    });
+  }
+
+  /* ---------- read the clues ---------- */
+  var DATA;
+  try {
+    DATA = JSON.parse(document.getElementById('game-data').textContent);
+    if (!DATA || !Array.isArray(DATA.categories) || !DATA.categories.length) {
+      throw new Error('No categories were found.');
+    }
+  } catch (err) {
+    view.innerHTML = '<div class="data-error"><h1>The clue list has a typing error</h1>' +
+      '<p>Open this file in a text editor and check the game-data block near the top. ' +
+      'Every piece of text needs straight double quotes around it, and clues are separated by commas.</p>' +
+      '<p class="small">Details: ' + esc(err.message) + '</p></div>';
+    return;
+  }
+
+  var CATS = DATA.categories;
+  var ROWS = 0;
+  CATS.forEach(function (c) {
+    c.clues = Array.isArray(c.clues) ? c.clues : [];
+    ROWS = Math.max(ROWS, c.clues.length);
+  });
+  var FINAL = DATA.final && DATA.final.clue ? DATA.final : null;
+  var TITLE = DATA.title || 'Jeopardy';
+  var KEY = 'jeopardy-sparta-survey-government-v1';
+  var DEFAULT_NAMES = ['Team 1', 'Team 2', 'Team 3', 'Team 4', 'Team 5', 'Team 6'];
+
+  var state = null;
+  var ui = {
+    view: 'start', c: null, r: null, revealed: false,
+    ddTeam: null, ddWager: '', ddWagerNum: 0, ddError: '',
+    count: 4, names: DEFAULT_NAMES.slice(),
+    timer: null, left: 0, timerText: '',
+    finalError: '', confirm: false
+  };
+
+  /* ---------- helpers ---------- */
+  function fmt(n) { return n < 0 ? '−' + Math.abs(n) : String(n); }
+  function valueOf(c, r) { var v = Number(CATS[c].clues[r].value); return isFinite(v) ? v : 0; }
+  function tagOf(cat) { return (cat.clues[0] && cat.clues[0].dotPoint) || cat.dotPoint || ''; }
+  function isDD(c, r) { return !!state && state.dd === c + '-' + r; }
+  function newFinal() { return { stage: 'wager', wagers: [], wagerNums: [], marks: [], applied: false }; }
+  function maxFinalWager(t) { return Math.max(0, t.score); }
+  function maxDDWager(t) { return Math.max(t.score, 500); }
+
+  function countLeft() {
+    var n = 0;
+    CATS.forEach(function (c, ci) {
+      c.clues.forEach(function (_, r) { if (!state.used[ci + '-' + r]) n++; });
+    });
+    return n;
+  }
+
+  function pickDD() {
+    var spots = [];
+    CATS.forEach(function (c, ci) {
+      for (var r = 2; r < c.clues.length && r <= 4; r++) spots.push(ci + '-' + r);
+    });
+    return spots.length ? spots[Math.floor(Math.random() * spots.length)] : '';
+  }
+
+  function validState(s) {
+    if (!s || typeof s !== 'object' || !Array.isArray(s.teams)) return false;
+    if (s.teams.length < 2 || s.teams.length > 6) return false;
+    for (var i = 0; i < s.teams.length; i++) {
+      var t = s.teams[i];
+      if (!t || typeof t.name !== 'string' || typeof t.score !== 'number' || !isFinite(t.score)) return false;
+    }
+    if (!s.used || typeof s.used !== 'object') return false;
+    if (typeof s.dd !== 'string') return false;
+    if (!s.final || typeof s.final !== 'object') s.final = newFinal();
+    return true;
+  }
+
+  /* ---------- browser storage (optional: the game works without it) ---------- */
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { /* storage blocked */ } }
+  function load() { try { var s = localStorage.getItem(KEY); return s ? JSON.parse(s) : null; } catch (e) { return null; } }
+  function clearSave() { try { localStorage.removeItem(KEY); } catch (e) { /* storage blocked */ } }
+
+  /* ---------- timer ---------- */
+  function stopTimer() { if (ui.timer) { clearInterval(ui.timer); ui.timer = null; } }
+  function paintTimer() {
+    var el = document.getElementById('timer');
+    if (!el) return;
+    el.textContent = ui.timerText;
+    el.classList.toggle('done', ui.timerText === 'Time’s up');
+  }
+  function startTimer() {
+    stopTimer();
+    ui.left = 30;
+    ui.timerText = '30 s';
+    paintTimer();
+    ui.timer = setInterval(function () {
+      ui.left -= 1;
+      ui.timerText = ui.left > 0 ? ui.left + ' s' : 'Time’s up';
+      paintTimer();
+      if (ui.left <= 0) stopTimer();
+    }, 1000);
+  }
+
+  /* ---------- screens ---------- */
+  function startHTML() {
+    var seg = '';
+    for (var n = 2; n <= 6; n++) {
+      seg += '<button class="btn" data-action="set-count" data-n="' + n + '" aria-pressed="' + (ui.count === n) + '">' + n + '</button>';
+    }
+    var names = '';
+    for (var i = 0; i < ui.count; i++) {
+      names += '<label class="name-field" for="team-name-' + i + '"><span>Team ' + (i + 1) + ' name</span>' +
+        '<input id="team-name-' + i + '" type="text" maxlength="24" autocomplete="off" value="' + esc(ui.names[i]) + '"></label>';
+    }
+    return '<section class="start">' +
+      '<p class="eyebrow">' + esc(DATA.subtitle || '') + '</p>' +
+      '<h1>' + titleHTML() + '</h1>' +
+      '<div class="how-list">' +
+        '<p class="how">Teams take turns to pick a tile. Read the clue, take an answer, then press <b>Show answer</b> (or Space) and award the points.</p>' +
+        '<p class="how">One tile hides a Daily Double, and the game ends with Final Jeopardy, where teams wager their points.</p>' +
+      '</div>' +
+      '<div class="setup">' +
+        '<div class="setup-row"><span class="setup-label" id="count-label">Number of teams</span>' +
+          '<div class="seg" role="group" aria-labelledby="count-label">' + seg + '</div></div>' +
+        '<div class="names">' + names + '</div>' +
+        '<p class="small">Click a name to rename the team.</p>' +
+        '<button class="btn primary big" data-action="start">Start game</button>' +
+      '</div>' +
+    '</section>';
+  }
+
+  function titleHTML() {
+    var parts = TITLE.split(':');
+    if (parts.length > 1) return esc(parts[0]) + ':<span>' + esc(parts.slice(1).join(':').trim()) + '</span>';
+    return esc(TITLE);
+  }
+
+  function boardHTML() {
+    var left = countLeft();
+    var h = '<section class="board-view">' +
+      '<div class="bar"><p class="bar-title">' + esc(TITLE) + '</p><div class="bar-actions">' +
+        '<span class="left">' + (left ? left + (left === 1 ? ' clue' : ' clues') + ' left' : 'All clues played') + '</span>' +
+        (FINAL ? '<button class="btn ' + (left ? 'ghost' : 'primary') + '" data-action="final">Final Jeopardy</button>' : '') +
+        '<button class="btn ghost" data-action="new-game">New game</button>' +
+      '</div></div>' +
+      '<div class="board-wrap"><div class="board" style="--cols:' + CATS.length + ';--rows:' + ROWS + '">';
+    CATS.forEach(function (c) {
+      h += '<div class="cat"><span class="tag">' + esc(tagOf(c)) + '</span><span class="cat-name">' + esc(c.name) + '</span></div>';
+    });
+    for (var r = 0; r < ROWS; r++) {
+      CATS.forEach(function (c, ci) {
+        var clue = c.clues[r];
+        if (!clue) { h += '<div class="tile used" aria-hidden="true"></div>'; return; }
+        if (state.used[ci + '-' + r]) {
+          h += '<button class="tile used" disabled aria-label="' + esc(c.name) + ' ' + esc(clue.value) + ', already played"></button>';
+        } else {
+          h += '<button class="tile" data-action="open" data-c="' + ci + '" data-r="' + r + '" aria-label="' + esc(c.name) + ' for ' + esc(clue.value) + '">' + esc(clue.value) + '</button>';
+        }
+      });
+    }
+    return h + '</div></div></section>';
+  }
+
+  function answerHTML(item) {
+    return '<div class="answer"><p class="ans">' + esc(item.answer) + '</p>' +
+      (item.accept ? '<p class="accept"><span>Also accept</span>' + esc(item.accept) + '</p>' : '') +
+      (item.ref ? '<p class="ref"><span>Source</span>' + esc(item.ref) + '</p>' : '') +
+      '</div>';
+  }
+
+  function clueHTML() {
+    var cat = CATS[ui.c], clue = cat.clues[ui.r], dd = isDD(ui.c, ui.r);
+    var team = dd ? state.teams[ui.ddTeam] : null;
+    var pts = dd ? 'Daily Double · ' + esc(team.name) + ' wagers ' + fmt(ui.ddWagerNum) : esc(clue.value);
+    var h = '<section class="clue-view">' +
+      '<div class="bar"><p class="clue-meta"><span class="tag">' + esc(clue.dotPoint || tagOf(cat)) + '</span>' +
+        '<span class="meta-cat">' + esc(cat.name) + '</span><span class="meta-pts">' + pts + '</span></p>' +
+        '<button class="btn ghost" data-action="back">Back to board<kbd>Esc</kbd></button></div>' +
+      '<div class="clue-body"><p class="clue-text">' + esc(clue.clue) + '</p>';
+    if (!ui.revealed) {
+      h += '<div class="actions"><button class="btn primary big" data-action="reveal">Show answer<kbd>Space</kbd></button></div>';
+    } else if (dd) {
+      h += answerHTML(clue) + '<div class="actions">' +
+        '<span class="award-label">' + esc(team.name) + ':</span>' +
+        '<button class="btn right" data-action="dd-right">Right +' + fmt(ui.ddWagerNum) + '</button>' +
+        '<button class="btn wrong" data-action="dd-wrong">Wrong ' + fmt(-ui.ddWagerNum) + '</button>' +
+        '<button class="btn ghost" data-action="back">Back to board</button></div>';
+    } else {
+      h += answerHTML(clue) + '<div class="actions"><span class="award-label">Award ' + esc(clue.value) + ' to</span>' +
+        state.teams.map(function (t, i) {
+          return '<button class="btn award" data-action="award" data-t="' + i + '">' + esc(t.name) + '</button>';
+        }).join('') +
+        '<button class="btn ghost" data-action="nobody">No one</button>' +
+        '<button class="btn ghost" data-action="back">Back to board</button></div>';
+    }
+    return h + '</div></section>';
+  }
+
+  function ddHTML() {
+    var cat = CATS[ui.c];
+    var max = ui.ddTeam == null ? null : maxDDWager(state.teams[ui.ddTeam]);
+    return '<section class="dd-view">' +
+      '<div class="bar"><p class="clue-meta"><span class="tag">' + esc(tagOf(cat)) + '</span>' +
+        '<span class="meta-cat">' + esc(cat.name) + '</span></p>' +
+        '<button class="btn ghost" data-action="back">Back to board<kbd>Esc</kbd></button></div>' +
+      '<div class="dd-body">' +
+        '<p class="dd-title">Daily Double</p>' +
+        '<p class="dd-step">Which team picked this tile? That team can wager up to its score or 500, whichever is higher.</p>' +
+        '<div class="team-pick">' + state.teams.map(function (t, i) {
+          return '<button class="btn" data-action="dd-team" data-t="' + i + '" aria-pressed="' + (ui.ddTeam === i) + '">' + esc(t.name) + '</button>';
+        }).join('') + '</div>' +
+        '<div class="wager-line"><label for="dd-wager">Wager</label>' +
+          '<input class="num" id="dd-wager" type="number" inputmode="numeric" min="0" step="1"' +
+          (max != null ? ' max="' + max + '"' : '') + ' value="' + esc(ui.ddWager) + '">' +
+          '<span class="small">' + (max != null ? '0 to ' + max : 'Choose a team first') + '</span></div>' +
+        (ui.ddError ? '<p class="error" role="alert">' + esc(ui.ddError) + '</p>' : '') +
+        '<button class="btn primary big" data-action="dd-go">Show the clue</button>' +
+      '</div></section>';
+  }
+
+  function finalHTML() {
+    var f = state.final, body;
+    if (f.applied) {
+      body = winnerHTML();
+    } else if (f.stage === 'wager') {
+      body = '<p class="dd-title">Final Jeopardy</p>' +
+        '<p class="final-cat">' + esc(FINAL.category) + '</p>' +
+        '<p class="dd-step">Each team secretly writes a wager from 0 up to its score. Type the wagers in, then show the clue. An empty box counts as 0.</p>' +
+        '<div class="wagers">' + state.teams.map(function (t, i) {
+          var max = maxFinalWager(t);
+          return '<div class="wager-card"><label for="fw-' + i + '">' + esc(t.name) + '</label>' +
+            '<input class="num" id="fw-' + i + '" type="number" inputmode="numeric" min="0" max="' + max + '" step="1" value="' +
+            esc(f.wagers[i] == null ? '' : f.wagers[i]) + '">' +
+            '<span class="small">0 to ' + max + '</span></div>';
+        }).join('') + '</div>' +
+        (ui.finalError ? '<p class="error" role="alert">' + esc(ui.finalError) + '</p>' : '') +
+        '<button class="btn primary big" data-action="final-clue">Show the clue</button>';
+    } else if (f.stage === 'clue') {
+      body = '<p class="final-cat sm">' + esc(FINAL.category) + '</p>' +
+        '<p class="clue-text">' + esc(FINAL.clue) + '</p>' +
+        '<div class="actions">' +
+          '<button class="btn ghost" data-action="timer">' + (ui.timer ? 'Restart timer' : 'Start 30-second timer') + '</button>' +
+          '<span id="timer" class="timer" aria-live="polite">' + esc(ui.timerText) + '</span>' +
+          '<button class="btn primary big" data-action="final-reveal">Show answer<kbd>Space</kbd></button>' +
+        '</div>';
+    } else {
+      var allMarked = state.teams.every(function (_, i) { return !!f.marks[i]; });
+      body = '<p class="clue-text sm">' + esc(FINAL.clue) + '</p>' + answerHTML(FINAL) +
+        '<div class="marks">' + state.teams.map(function (t, i) {
+          var m = f.marks[i];
+          return '<div class="mark-card' + (m ? ' marked' : '') + '"><span class="mark-name">' + esc(t.name) + '</span>' +
+            '<span class="small">Wager ' + fmt(f.wagerNums[i] || 0) + '</span>' +
+            '<div class="mark-btns">' +
+              '<button class="btn right" data-action="final-mark" data-t="' + i + '" data-v="right" aria-pressed="' + (m === 'right') + '">Right</button>' +
+              '<button class="btn wrong" data-action="final-mark" data-t="' + i + '" data-v="wrong" aria-pressed="' + (m === 'wrong') + '">Wrong</button>' +
+            '</div></div>';
+        }).join('') + '</div>' +
+        (ui.finalError ? '<p class="error" role="alert">' + esc(ui.finalError) + '</p>' : '') +
+        '<button class="btn ' + (allMarked ? 'primary' : 'ghost') + ' big" data-action="final-apply">Add up final scores</button>';
+    }
+    return '<section class="final-view">' +
+      '<div class="bar"><p class="clue-meta"><span class="tag">' + esc(FINAL.dotPoint || '') + '</span>' +
+        '<span class="meta-cat">Final Jeopardy</span></p>' +
+        '<button class="btn ghost" data-action="back">Back to board<kbd>Esc</kbd></button></div>' +
+      '<div class="final-body">' + body + '</div></section>';
+  }
+
+  function winnerHTML() {
+    var ranked = state.teams.map(function (t) { return { name: t.name, score: t.score }; })
+      .sort(function (a, b) { return b.score - a.score; });
+    var top = ranked[0].score;
+    var winners = ranked.filter(function (x) { return x.score === top; });
+    var head = winners.length === 1
+      ? '<p class="dd-title">' + esc(winners[0].name) + ' wins!</p>'
+      : '<p class="dd-title">It’s a tie!</p><p class="final-cat">' + winners.map(function (w) { return esc(w.name); }).join(' and ') + '</p>';
+    return head +
+      '<ol class="ranking">' + ranked.map(function (x) {
+        return '<li><span>' + esc(x.name) + '</span><span class="rank-score">' + fmt(x.score) + '</span></li>';
+      }).join('') + '</ol>' +
+      '<div class="actions"><button class="btn ghost" data-action="back">Back to board</button>' +
+      '<button class="btn primary" data-action="new-game">New game</button></div>';
+  }
+
+  function renderScores() {
+    if (!state || ui.view === 'start') { scoresEl.hidden = true; scoresEl.innerHTML = ''; return; }
+    scoresEl.hidden = false;
+    var top = Math.max.apply(null, state.teams.map(function (t) { return t.score; }));
+    var leaders = state.teams.filter(function (t) { return t.score === top; }).length;
+    scoresEl.innerHTML = state.teams.map(function (t, i) {
+      var lead = top > 0 && t.score === top && leaders < state.teams.length ? ' lead' : '';
+      return '<div class="team' + lead + '"><div class="team-text">' +
+        '<span class="team-name">' + esc(t.name) + '</span>' +
+        '<span class="team-score' + (t.score < 0 ? ' neg' : '') + '">' + fmt(t.score) + '</span></div>' +
+        '<div class="adj">' +
+          '<button class="adj-btn" data-action="adj" data-t="' + i + '" data-d="-100" aria-label="Take 100 points from ' + esc(t.name) + '">−</button>' +
+          '<button class="adj-btn" data-action="adj" data-t="' + i + '" data-d="100" aria-label="Add 100 points to ' + esc(t.name) + '">+</button>' +
+        '</div></div>';
+    }).join('');
+  }
+
+  function render() {
+    if (ui.view === 'start') view.innerHTML = startHTML();
+    else if (ui.view === 'board') view.innerHTML = boardHTML();
+    else if (ui.view === 'clue') view.innerHTML = clueHTML();
+    else if (ui.view === 'dd') view.innerHTML = ddHTML();
+    else if (ui.view === 'final') view.innerHTML = finalHTML();
+    renderScores();
+    confirmEl.hidden = !ui.confirm;
+  }
+
+  /* ---------- actions ---------- */
+  function toBoard() {
+    stopTimer();
+    ui.view = 'board';
+    ui.c = ui.r = null;
+    ui.revealed = false;
+    ui.ddTeam = null; ui.ddWager = ''; ui.ddWagerNum = 0; ui.ddError = '';
+    ui.finalError = '';
+    render();
+  }
+
+  function reveal() {
+    if (ui.view !== 'clue' || ui.revealed) return;
+    ui.revealed = true;
+    state.used[ui.c + '-' + ui.r] = true;
+    save();
+    render();
+  }
+
+  function finalReveal() {
+    if (ui.view !== 'final' || state.final.applied || state.final.stage !== 'clue') return;
+    stopTimer();
+    state.final.stage = 'answer';
+    save();
+    render();
+  }
+
+  function startGame() {
+    var teams = [];
+    for (var i = 0; i < ui.count; i++) {
+      var name = String(ui.names[i] || '').trim() || DEFAULT_NAMES[i];
+      teams.push({ name: name, score: 0 });
+    }
+    state = { teams: teams, used: {}, dd: pickDD(), final: newFinal() };
+    save();
+    toBoard();
+  }
+
+  function newGame() {
+    stopTimer();
+    if (state) {
+      ui.count = state.teams.length;
+      state.teams.forEach(function (t, i) { ui.names[i] = t.name; });
+    }
+    state = null;
+    clearSave();
+    ui.confirm = false;
+    ui.view = 'start';
+    render();
+  }
+
+  function ddGo() {
+    if (ui.ddTeam == null) { ui.ddError = 'Choose the team that picked this tile.'; render(); return; }
+    var raw = String(ui.ddWager).trim();
+    var max = maxDDWager(state.teams[ui.ddTeam]);
+    if (!/^\d+$/.test(raw)) { ui.ddError = 'Type the wager as a whole number of points.'; render(); return; }
+    var w = parseInt(raw, 10);
+    if (w > max) { ui.ddError = 'The most this team can wager is ' + max + '.'; render(); return; }
+    ui.ddWagerNum = w;
+    ui.ddError = '';
+    ui.revealed = false;
+    ui.view = 'clue';
+    render();
+  }
+
+  function finalClue() {
+    var f = state.final, problems = [], nums = [];
+    state.teams.forEach(function (t, i) {
+      var raw = String(f.wagers[i] == null ? '' : f.wagers[i]).trim();
+      if (raw === '') raw = '0';
+      var max = maxFinalWager(t);
+      if (!/^\d+$/.test(raw)) problems.push(t.name + ': type a whole number');
+      else if (parseInt(raw, 10) > max) problems.push(t.name + ': the most is ' + max);
+      else nums[i] = parseInt(raw, 10);
+    });
+    if (problems.length) { ui.finalError = problems.join(' · '); render(); return; }
+    f.wagerNums = nums;
+    f.stage = 'clue';
+    ui.finalError = '';
+    ui.timerText = '';
+    save();
+    render();
+  }
+
+  function finalApply() {
+    var f = state.final;
+    if (f.applied) return;
+    var missing = state.teams.filter(function (_, i) { return !f.marks[i]; });
+    if (missing.length) {
+      ui.finalError = 'Mark every team right or wrong first (' + missing.map(function (t) { return t.name; }).join(', ') + ').';
+      render();
+      return;
+    }
+    state.teams.forEach(function (t, i) {
+      var w = f.wagerNums[i] || 0;
+      t.score += f.marks[i] === 'right' ? w : -w;
+    });
+    f.applied = true;
+    f.stage = 'done';
+    ui.finalError = '';
+    save();
+    render();
+  }
+
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest ? e.target.closest('[data-action]') : null;
+    if (!b || b.disabled) return;
+    var a = b.getAttribute('data-action');
+    var t = b.hasAttribute('data-t') ? parseInt(b.getAttribute('data-t'), 10) : null;
+
+    switch (a) {
+      case 'set-count':
+        ui.count = parseInt(b.getAttribute('data-n'), 10);
+        render();
+        break;
+      case 'start':
+        startGame();
+        break;
+      case 'open': {
+        var c = parseInt(b.getAttribute('data-c'), 10), r = parseInt(b.getAttribute('data-r'), 10);
+        if (state.used[c + '-' + r]) return;
+        ui.c = c; ui.r = r; ui.revealed = false;
+        if (isDD(c, r)) { ui.view = 'dd'; ui.ddTeam = null; ui.ddWager = ''; ui.ddError = ''; }
+        else ui.view = 'clue';
+        render();
+        break;
+      }
+      case 'reveal':
+        reveal();
+        break;
+      case 'award':
+        if (!ui.revealed) return;
+        state.teams[t].score += valueOf(ui.c, ui.r);
+        save();
+        toBoard();
+        break;
+      case 'nobody':
+      case 'back':
+        toBoard();
+        break;
+      case 'adj':
+        state.teams[t].score += parseInt(b.getAttribute('data-d'), 10);
+        save();
+        render();
+        break;
+      case 'dd-team':
+        ui.ddTeam = t;
+        ui.ddError = '';
+        render();
+        break;
+      case 'dd-go':
+        ddGo();
+        break;
+      case 'dd-right':
+      case 'dd-wrong':
+        if (!ui.revealed || ui.ddTeam == null) return;
+        state.teams[ui.ddTeam].score += a === 'dd-right' ? ui.ddWagerNum : -ui.ddWagerNum;
+        save();
+        toBoard();
+        break;
+      case 'final':
+        stopTimer();
+        ui.view = 'final';
+        ui.finalError = '';
+        render();
+        break;
+      case 'final-clue':
+        finalClue();
+        break;
+      case 'timer':
+        startTimer();
+        render();
+        break;
+      case 'final-reveal':
+        finalReveal();
+        break;
+      case 'final-mark':
+        state.final.marks[t] = b.getAttribute('data-v');
+        ui.finalError = '';
+        save();
+        render();
+        break;
+      case 'final-apply':
+        finalApply();
+        break;
+      case 'new-game':
+        ui.confirm = true;
+        render();
+        document.getElementById('confirm-no').focus();
+        break;
+      case 'confirm-yes':
+        newGame();
+        break;
+      case 'confirm-no':
+        ui.confirm = false;
+        render();
+        break;
+    }
+  });
+
+  document.addEventListener('input', function (e) {
+    var id = e.target.id || '';
+    if (id.indexOf('team-name-') === 0) ui.names[parseInt(id.slice(10), 10)] = e.target.value;
+    else if (id === 'dd-wager') ui.ddWager = e.target.value;
+    else if (id.indexOf('fw-') === 0 && state) { state.final.wagers[parseInt(id.slice(3), 10)] = e.target.value; save(); }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (ui.confirm) {
+      if (e.key === 'Escape') { e.preventDefault(); ui.confirm = false; render(); }
+      return;
+    }
+    var tag = e.target && e.target.tagName;
+    var typing = tag === 'INPUT' || tag === 'TEXTAREA';
+    if (e.key === 'Enter' && e.target && e.target.id === 'dd-wager') { e.preventDefault(); ddGo(); return; }
+    if ((e.key === ' ' || e.code === 'Space') && !typing) {
+      if (ui.view === 'clue' && !ui.revealed) { e.preventDefault(); reveal(); }
+      else if (ui.view === 'final' && state && !state.final.applied && state.final.stage === 'clue') { e.preventDefault(); finalReveal(); }
+      return;
+    }
+    if (e.key === 'Escape' && (ui.view === 'clue' || ui.view === 'dd' || ui.view === 'final')) {
+      e.preventDefault();
+      toBoard();
+    }
+  });
+
+  /* ---------- start up: resume a saved game if there is one ---------- */
+  function boot(hotData) {
+    var saved = hotData && validState(hotData.state) ? hotData.state : load();
+    if (validState(saved)) {
+      state = saved;
+      ui.count = state.teams.length;
+      state.teams.forEach(function (t, i) { ui.names[i] = t.name; });
+      ui.view = 'board';
+    } else {
+      state = null;
+      ui.view = 'start';
+    }
+    render();
+  }
+
+  try {
+    if (window.claude && window.claude.hot && typeof window.claude.hot.snapshot === 'function') {
+      window.claude.hot.snapshot(function () { return { state: state }; });
+    }
+  } catch (e) { /* not running inside the viewer */ }
+
+  if (window.claude && window.claude.hot && typeof window.claude.hot.ready === 'function') {
+    window.claude.hot.ready(boot);
+  } else {
+    boot(window.claude && window.claude.hot ? window.claude.hot.data : null);
+  }
+})();
+</script>
+</body>
+</html>

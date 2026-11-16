@@ -11,6 +11,13 @@ Six revision games for Year 12 Ancient History (NSW), two per topic:
 Every game has 5 categories × 5 clues (100–500 points) plus a Final Jeopardy clue.
 Categories are named after the syllabus dot points, and no question is repeated anywhere across the six games.
 
+**Extra game:** `games/sparta-3.html` — Spartan Society: Survey & Government. It covers only the survey
+dot point and government (ephorate, gerousia, ekklesia), with 6 categories × 5 clues, a hidden Daily Double
+and Final Jeopardy. It is a focused review, so it revisits some core facts from Sparta I. It plays slightly
+differently (Space shows the answer, then click the team that earns the points; Escape returns to the board),
+and its clues use the fields `clue`, `answer`, `accept`, `dotPoint` and `ref` — the note at the top of the
+file explains how to edit them. `tools/update_keys_and_index.py` reads both formats.
+
 Open `index.html` to see all the games in one place.
 
 ## Playing a game
